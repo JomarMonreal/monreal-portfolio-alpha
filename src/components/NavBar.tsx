@@ -23,20 +23,21 @@ const NavBar: FC<{ navBarItems: NavBarItem[] }> = ({navBarItems}) => {
             {
             navBarItems.map((navBarItem,index) =>{
                 return(
-                    <li 
-                    key={index}
-                    id={"nav_bar-button-" + index}
-                    className={`${styles.nav_bar_button}`}
-                    onClick={(e) => {
-                        setselectedIndex(index)
-                    }}
-                    
-                    >
-                        <div id={"nav_bar-selected-" + index} className={selectedIndex === index? `${styles.nav_bar_selected}`: `${styles.nav_bar_selected} ${styles.no_display}`}></div>
-                        <div title={navBarItem.label}>
-                            {navBarItem.icon}
-                        </div>
-                    </li>
+                    <Link key={index} href={navBarItem.path}>
+                        <li 
+                        id={"nav_bar-button-" + index}
+                        className={`${styles.nav_bar_button}`}
+                        onClick={(e) => {
+                            setselectedIndex(index)
+                        }}
+                        
+                        >
+                            <div id={"nav_bar-selected-" + index} className={selectedIndex === index? `${styles.nav_bar_selected}`: `${styles.nav_bar_selected} ${styles.no_display}`}></div>
+                            <div title={navBarItem.label}>
+                                {navBarItem.icon}
+                            </div>
+                        </li>
+                    </Link>
                 )
             })
             }
