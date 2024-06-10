@@ -1,0 +1,45 @@
+.bamboos{
+    position: fixed;
+    right: -95vw;
+    top: -100vh;
+    height: 300%;
+    width: 150vw;
+    z-index: 100;
+    filter: contrast(200%);
+    filter: brightness(70%);
+
+    transform-origin: 0% 100%;
+    animation: sway 10s infinite linear;
+    pointer-events: none;
+}
+
+@keyframes sway {
+    0% {
+        rotate: -3deg;
+     }
+    50% {
+        rotate: 0deg;
+     }
+    100% {
+        rotate: -3deg; 
+    }
+}
+
+.bamboos2{
+    position: fixed;
+    left: -85vw;
+    top: -50vh;
+    height: 250%;
+    width: 100vw;
+    transform: scaleX(-1);
+    z-index: -100;
+    filter: saturate(70%);
+
+    animation: sway 20s infinite linear;
+}
+
+.bamboo{
+    object-fit: fill;
+    width: 75%;
+    height: 100%;
+}
