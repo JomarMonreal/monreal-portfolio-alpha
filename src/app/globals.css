@@ -17,7 +17,7 @@ body{
   font-size: small;
 }
 
-h1, h2, h3{
+h1, h2, h3,h4{
   font-family: "Merienda", cursive;
   font-weight: 800;
 }
@@ -28,6 +28,12 @@ h2{
 
 h3{
   font-size: 25px;
+}
+
+h4{
+  font-size: 18px;
+  margin: 0;
+  margin-left: 1rem;
 }
 
 ul{
@@ -44,7 +50,7 @@ li{
 button{
   background-color: var(--green-color);
   color: white;
-  width: 80px;
+  width: auto;
   border-radius: 1rem;
   cursor: pointer;
   border: 0;
@@ -61,4 +67,12 @@ button:hover{
 
 .padded{
   padding: 1rem;
+}
+
+.filled{
+  width: 100%;
+}
+
+.icon_button:hover{
+  scale: 1.1;
 }

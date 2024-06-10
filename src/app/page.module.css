@@ -1,10 +1,10 @@
 .home_page{
     margin: 4vw 40vw 18vh 8vw;
     padding: 1rem;
-    animation: float 8s infinite ease-in-out;
+    /* animation: float 15s infinite linear; */
 }
 
-@keyframes float {
+/* @keyframes float {
     0% {
         translate: 0 0%;
     }
@@ -14,4 +14,4 @@
     100% {
         translate: 0 0%;
     }
-}
+} */
