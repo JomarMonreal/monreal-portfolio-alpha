@@ -1,0 +1,24 @@
+[
+    {
+      "type": "website",
+      "imagePath": "/images/website2.png",
+      "title": "IChooSe",
+      "description": "IChooSe is an online room reservation system for the Institute of Computer Science at the University of the Philippines Los Baños. It simplifies the process of reserving rooms within the institute.",
+      "projectUrl": "https://alpha-ichoose.vercel.app/"
+    },
+    {
+      "type": "website",
+      "imagePath": "/images/website2.png",
+      "title": "Farm-to-Table",
+      "description": "Farm-to-Table is an online platform connecting farmers directly with consumers to provide fresh produce. \"Farm-to-table\" means a social movement emphasizing a direct link between consumers and farmers as the source of food.",
+      "projectUrl": "https://farm-to-table.vercel.app/"
+    },
+    {
+      "type": "mobile",
+      "imagePath": "/images/mobile.png",
+      "title": "Elbi GenerosiTree",
+      "description": "Elbi Donation System is a mobile application developed using Flutter, designed to manage donations coming into the university. This project is a Flutter-based application aimed at streamlining the process of managing donations. It utilizes various packages and dependencies to offer a comprehensive and user-friendly experience.",
+      "projectUrl": "https://elbi-generositree.vercel.app/"
+    }
+  ]
+  

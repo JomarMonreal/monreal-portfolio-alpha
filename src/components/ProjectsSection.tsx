@@ -1,33 +1,26 @@
+"use client"
+
+import { Project, convertToProjectsArray} from "@/types/types";
 import { ProjectsSectionCard } from "./ProjectsSectionCard";
+import projectsJSON from "../../public/json/projects.json"
+import { useState } from "react";
 
 export function ProjectsSection() {
-  return <div>
-    <h2>Projects</h2>
+  const [projects, setProjects] = useState<Project[]>(convertToProjectsArray(projectsJSON))
 
-    <ProjectsSectionCard 
-      type={"website"} 
-      imagePath={"/images/website2.png"} 
-      title={"IChooSe"} 
-      description={"IChooSe is an online room reservation system for the Institute of Computer Science at the University of the Philippines Los Baños. It simplifies the process of reserving rooms within the institute."} 
-      projectUrl={"https://alpha-ichoose.vercel.app/"}
-    />
-
-    <ProjectsSectionCard 
-      type={"website"} 
-      imagePath={"/images/website2.png"} 
-      title={"Farm-to-Table"} 
-      description={"IChooSe is an online room reservation system for the Institute of Computer Science at the University of the Philippines Los Baños. It simplifies the process of reserving rooms within the institute."} 
-      projectUrl={"https://alpha-ichoose.vercel.app/"}
-    />
-
-    <ProjectsSectionCard 
-      type={"website"} 
-      imagePath={"/images/mobile.png"} 
-      title={"Elbi GenerosiTree"} 
-      description={"IChooSe is an online room reservation system for the Institute of Computer Science at the University of the Philippines Los Baños. It simplifies the process of reserving rooms within the institute."} 
-      projectUrl={"https://alpha-ichoose.vercel.app/"}
-    />
-
-  </div>;
+  return (
+    <div>
+      <h2>Projects</h2>
+      {projects.map((project, index) => (
+        <ProjectsSectionCard
+          key={index}
+          type={project.type}
+          imagePath={project.imagePath}
+          title={project.title}
+          description={project.description}
+          projectUrl={project.projectUrl}
+        />
+      ))}
+    </div>
+  );
 }
-

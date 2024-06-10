@@ -1,7 +1,6 @@
 import { FC } from "react";
 import styles from "./ProjectsSection.module.css";
-
-type ProjectType = "website" | "mobile"
+import { ProjectType } from "../types/types";
 
 interface ProjectSectionCardProps{
   type: ProjectType,
