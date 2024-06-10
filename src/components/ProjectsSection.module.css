@@ -1,0 +1,18 @@
+.projects_section_image{
+    width: 300px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.projects_section_card{
+    display: flex;
+    height: 250px;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.projects_section_description{
+    height: 50%;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
