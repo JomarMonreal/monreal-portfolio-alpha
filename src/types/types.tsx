@@ -1,21 +1,23 @@
-export type ProjectType = "website" | "mobile";
+export type ProjectType = "website" | "mobile" | "game";
 export type Project = {
     type: ProjectType,
     imagePath: string,
     title: string,
     description: string,
     projectUrl: string,
+    imageUrl: string,
   }
-  
+
 const convertToProject = (data: any): Project | null => {
-    const projectTypes: ProjectType[] = ["website", "mobile"];
+    const projectTypes: ProjectType[] = ["website", "mobile", "game"];
     if (projectTypes.includes(data.type)) {
         return {
             type: data.type as ProjectType,
             imagePath: data.imagePath,
             title: data.title,
             description: data.description,
-            projectUrl: data.projectUrl
+            projectUrl: data.projectUrl,
+            imageUrl: data.imageUrl
         };
     }
     return null;
