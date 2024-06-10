@@ -27,7 +27,7 @@
     },
     {
       "type": "mobile",
-      "imagePath": "/images/mobile.png",
+      "imagePath": "/images/mobile2.png",
       "title": "Elbi GenerosiTree",
       "description": "Elbi GenerosiTree is a mobile application developed using Flutter, designed to manage donations coming into the university. This project is a Flutter-based application aimed at streamlining the process of managing donations. It utilizes various packages and dependencies to offer a comprehensive and user-friendly experience.",
       "projectUrl": "https://github.com/ICS-CMSC-23/Elbi-Donation-System/",

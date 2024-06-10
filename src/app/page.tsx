@@ -7,14 +7,11 @@ import { ProjectsSection } from "../components/ProjectsSection";
 
 export default function Home() {
   return (
-    <main>
-      <Bamboos/>
-      <div className={styles.home_page}>
+      <div className={styles.home_page} style={{flex: 1}}>
         <HomeCover/>
         <ProjectsSection/>
         <ContactMeSection/>
       </div>
-    </main>
   );
 }
 

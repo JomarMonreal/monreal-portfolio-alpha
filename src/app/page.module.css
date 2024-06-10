@@ -1,17 +1,10 @@
 .home_page{
-    margin: 4vw 40vw 18vh 8vw;
-    padding: 1rem;
-    /* animation: float 15s infinite linear; */
+    margin: 7svh 40svw 7svh 10svw;
+    width: 100%;
 }
 
-/* @keyframes float {
-    0% {
-        translate: 0 0%;
+@media (max-width: 600px) {
+    .home_page{
+        margin: 12svh 40svw 7svh 10svw;
     }
-    50% {
-        translate: 0 0.5%;
-    }
-    100% {
-        translate: 0 0%;
-    }
-} */
+}

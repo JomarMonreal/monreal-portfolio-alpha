@@ -14,7 +14,7 @@ interface ProjectSectionCardProps{
 export const ProjectsSectionCard:FC<ProjectSectionCardProps> = (props) => {
   return <div className={styles.projects_section_card} style={{ alignItems: "center" }}>
     <img className={styles.projects_section_image} src={props.imagePath} />
-    <div className="padded flexed" style={{ flexDirection: "column", justifyContent:"center", height: "100%" }}>
+    <div className="padded flexed" style={{ flexDirection: "column", justifyContent:"center", width: "50%", padding: "1.5rem" }}>
       <h3 style={{ margin: 0 }}>{props.title}</h3>
       <p className={styles.projects_section_description}>{props.description}</p>
       <button style={{ width: "auto" }} onClick={props.onViewClick}>View more details</button>

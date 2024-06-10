@@ -34,7 +34,7 @@ export function HomeCover() {
           <FaPython size={iconSize}/> <div className="padded"> <strong>Python:</strong> Data analysis and statistics.</div>
         </li>
       </ul>
-      <p>With this comprehensive skill set, I am well-equipped to tackle diverse projects and deliver high-quality solutions that meet client needs and exceed expectations.</p>
+      <p id="project_section">With this comprehensive skill set, I am well-equipped to tackle diverse projects and deliver high-quality solutions that meet client needs and exceed expectations.</p>
     </div>
 
 

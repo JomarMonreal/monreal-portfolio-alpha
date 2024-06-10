@@ -7,6 +7,8 @@ import {iconSize, iconColor} from "../constants/iconConstants.js"
 import { FaHome, FaInfo } from 'react-icons/fa'; 
 import { AiFillProject } from "react-icons/ai";
 import { IoIosContact } from "react-icons/io";
+import { DiVisualstudio } from "react-icons/di";
+import { Bamboos } from "@/components/Bamboos";
 
 
 const navBarItems = [
@@ -37,9 +39,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {children}
-        <NavBar navBarItems={navBarItems}/>
+      <body className={`${inter.className}`}>
+        <Bamboos/>
+        <div className={`flexed`} style={{width: "100%"}}>
+          {children}
+          <NavBar navBarItems={navBarItems}/>
+        </div>
       </body>
     </html>
   );

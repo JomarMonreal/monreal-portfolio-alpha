@@ -15,25 +15,6 @@
     -webkit-backface-visibility: hidden;
 }
 
-@media (max-width: 900px) {
-    .bamboos{
-        right: -150vw;
-    }
-}
-
-
-@keyframes sway {
-    0% {
-        rotate: -3deg;
-     }
-    50% {
-        rotate: 0deg;
-     }
-    100% {
-        rotate: -3deg; 
-    }
-}
-
 .bamboos2{
     position: fixed;
     left: -85vw;
@@ -48,6 +29,40 @@
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
+
+@media (max-width: 850px) {
+    .bamboos{
+        right: -120vw;
+    }
+
+    .bamboos2{
+        left: 50vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .bamboos{
+        display: none;
+        right: -180vw;
+    }
+
+    .bamboos2{
+        left: 100vw;
+    }
+}
+
+@keyframes sway {
+    0% {
+        rotate: -3deg;
+     }
+    50% {
+        rotate: 0deg;
+     }
+    100% {
+        rotate: -3deg; 
+    }
+}
+
 
 .bamboo{
     object-fit: fill;

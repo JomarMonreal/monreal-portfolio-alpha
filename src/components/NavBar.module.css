@@ -17,6 +17,7 @@
 }
 
 .nav_bar_hidden{
+    display: none;
     visibility: hidden;
     position: relative;
     width: 8ch;
@@ -64,4 +65,54 @@
 
 .no_display{
     display: none;
+}
+
+
+@media (max-width: 600px) {
+    .nav_bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        background-color: var(--green-color);
+        height: 8ch;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 300;
+        border-radius:  0ch;
+        align-items: center;
+        padding-right: 1ch;
+    
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+
+    .nav_bar_buttons{
+        padding: 0;
+        margin: 0;
+        padding-top: 0ch;
+        padding-bottom: 1ch;
+        padding-left: 1ch;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav_bar_label{
+        font-family: "Merienda",cursive;
+        color: white;
+        padding-bottom: 1ch;
+        padding-right: 1ch;
+        user-select: none;
+        cursor: pointer;
+    }
+    
+    .nav_bar_title{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .nav_bar_selected{
+        display: none;
+    }
 }

@@ -16,7 +16,7 @@
 }
 
 .popup{
-    overflow: scroll;
+    overflow: auto;
     scrollbar-width: none;
     display: flex;
     justify-content: space-around;

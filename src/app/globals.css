@@ -8,7 +8,6 @@
   --green-color: #415c2b;
 }
 
-
 body{
   background-color: var(--background-color);
   color: var(--dark-green-color);

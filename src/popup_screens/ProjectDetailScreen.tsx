@@ -14,6 +14,7 @@ interface ProjectDetailScreenProps{
 
 export const ProjectDetailScreen: FC<ProjectDetailScreenProps> = (props) => {
   return <div className={`filled padded ${styles.project_detail_screen}`}> 
+    <div style={{height: "1rem", visibility: "hidden"}}>...</div>
     <img className={styles.project_detail_screen_image} src={props.imageUrl} />
     <div className={`filled ${styles.project_detail_screen_details}`}>
       <h1>{props.title}</h1>

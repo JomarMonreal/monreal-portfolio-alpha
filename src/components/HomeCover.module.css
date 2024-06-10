@@ -1,3 +1,7 @@
+.home_cover{
+    width: 100%;
+}
+
 .home_cover_title{
     font-size: 5rem;
     margin: 1rem 0;
@@ -38,13 +42,13 @@
         width: 80px;
     }
     to {
-        width: 200px;
+        width: 160px;
     }
 }
 
 @keyframes decreaseWidth {
     from {
-        width: 200px;
+        width: 160px;
     }
     to {
         width: 80px;
