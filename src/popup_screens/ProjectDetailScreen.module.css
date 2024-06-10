@@ -1,0 +1,16 @@
+.project_detail_screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.project_detail_screen_image{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 1rem;
+}
+
+.project_detail_screen_details{
+    padding-left: 1rem;
+}
