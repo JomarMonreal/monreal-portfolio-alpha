@@ -2,9 +2,10 @@
     width: 90%;
     height: 90%;
     border-radius: 50%;
+    filter: saturate(45%);
 }
 
-.contact_me_section_textarea{
+.contact_me_section_input{
     flex: 1;
     margin-left: 1rem;
     padding: 1rem;
@@ -14,10 +15,14 @@
     border-bottom: solid 1px;
     resize: none;
     border-radius: 1rem 1rem 0 0;
-    background-color: #FFFFFF88;
+    background-color: #FFFFFF00;
 }
 
-.contact_me_section_textarea:focus{
+.contact_me_section_input::placeholder{
+    color: var(--green-color);
+}
+
+.contact_me_section_input:focus{
     border-bottom: solid 4px var(--green-color);
 }
 
