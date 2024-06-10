@@ -14,9 +14,10 @@ body{
   color: var(--dark-green-color);
   display: flex;
   margin: 0;
+  font-size: small;
 }
 
-h1, h2{
+h1, h2, h3{
   font-family: "Merienda", cursive;
   font-weight: 800;
 }
@@ -25,19 +26,28 @@ h2{
   font-size: 50px;
 }
 
+h3{
+  font-size: 25px;
+}
+
 button{
-  background-color: var(--dark-green-color);
+  background-color: var(--green-color);
   color: white;
   width: 80px;
   border-radius: 1rem;
   cursor: pointer;
   border: 0;
+  padding: 1.5ch;
 }
 
 button:hover{
-  background-color: var(--green-color);
+  background-color: var(--dark-green-color);
 }
 
 .flexed{
   display: flex;
+}
+
+.padded{
+  padding: 1rem;
 }
