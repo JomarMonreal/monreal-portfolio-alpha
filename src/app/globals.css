@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 
 :root{
-  --background-color: #FFFCEA;
+  --background-color: #fdf5c3;
   --dark-green-color: #1A3B04;
   --dark-green-color-hover: #071001;
   --green-color: #415c2b;
@@ -28,6 +28,17 @@ h2{
 
 h3{
   font-size: 25px;
+}
+
+ul{
+  padding-left: 0;
+}
+
+li{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 1ch;
 }
 
 button{
