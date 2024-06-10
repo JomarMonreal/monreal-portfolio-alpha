@@ -4,13 +4,16 @@
     justify-content: space-between;
     position: fixed;
     background-color: var(--green-color);
-    height: 100vh;
+    height: 100svh;
     width: 8ch;
     right: 0;
     z-index: 300;
     border-radius:  3ch 0ch 0ch 3ch;
     align-items: center;
     padding-right: 1ch;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .nav_bar_hidden{

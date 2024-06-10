@@ -6,10 +6,13 @@
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    height: 100vh;
+    height: 100svh;
     width: 100vw;
     top: 0;
     left: 0;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .popup{
@@ -27,9 +30,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100svh;
     width: 100vw;
     background-color: rgba(19, 40, 14, 0.6); /* Semi-transparent black overlay */
     z-index: 499; /* Below the popup */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
   

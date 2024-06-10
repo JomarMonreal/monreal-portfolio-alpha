@@ -23,7 +23,7 @@ export function ContactMeSection() {
     <form>
       <h2 id="contact_section" style={{ marginBottom: "1rem" }}>Contact Me</h2>
       <p>
-        I&aposm open to new opportunities and always excited to connect for projects, collaborations, or simply a friendly chat. Don&apost hesitate to get in touch!
+        I&#39;m open to new opportunities and always excited to connect for projects, collaborations, or simply a friendly chat. Don&#39;t hesitate to get in touch!
       </p>
 
       <h4 style={{marginTop: "1rem"}}>Message:</h4>

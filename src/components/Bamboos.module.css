@@ -1,7 +1,7 @@
 .bamboos{
     position: fixed;
     right: -95vw;
-    top: -100vh;
+    top: -100svh;
     height: 300%;
     width: 150vw;
     z-index: 100;
@@ -11,7 +11,16 @@
     transform-origin: 0% 100%;
     animation: sway 10s infinite linear;
     pointer-events: none;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
+
+@media (max-width: 900px) {
+    .bamboos{
+        right: -150vw;
+    }
+}
+
 
 @keyframes sway {
     0% {
@@ -28,7 +37,7 @@
 .bamboos2{
     position: fixed;
     left: -85vw;
-    top: -50vh;
+    top: -50svh;
     height: 250%;
     width: 100vw;
     transform: scaleX(-1);
@@ -36,6 +45,8 @@
     filter: saturate(70%);
 
     animation: sway 20s infinite linear;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .bamboo{
