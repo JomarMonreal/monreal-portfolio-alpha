@@ -11,8 +11,8 @@ import { IoIosContact } from "react-icons/io";
 
 const navBarItems = [
   { path: '/', label: 'Home', icon: <FaHome size={iconSize} color={iconColor} cursor={"pointer"}/> },
-  { path: '/projects', label: 'Projects', icon: <AiFillProject size={iconSize} color={iconColor} cursor={"pointer"}/> },
-  { path: '/contact-me', label: 'Contact Me', icon: <IoIosContact size={iconSize} color={iconColor} cursor={"pointer"}/> },
+  { path: '#project_section', label: 'Projects', icon: <AiFillProject size={iconSize} color={iconColor} cursor={"pointer"}/> },
+  { path: '#contact_section', label: 'Contact Me', icon: <IoIosContact size={iconSize} color={iconColor} cursor={"pointer"}/> },
 ];
 
 
