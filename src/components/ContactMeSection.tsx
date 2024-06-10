@@ -6,9 +6,12 @@ import styles from "./ContactMeSection.module.css"
 
 export function ContactMeSection() {
   return <div>
-    <h2>Contact Me</h2>
-    <div className="flexed">
-      <img src="/images/profilePhoto.jfif" className={styles.contact_me_section_profile} />
+    <h2 style={{marginBottom: "1rem"}}>Contact Me</h2>
+    <p>I'm open to new opportunities and always excited to connect for projects, collaborations, or simply a friendly chat. Don't hesitate to get in touch!</p>
+    <div className="flexed padded">
+      <div className={styles.contact_me_section_profile_background}>
+        <img src="/images/profilePhoto.jfif" className={styles.contact_me_section_profile} />
+      </div>
       <textarea
         placeholder="Send me a message..."
         className={styles.contact_me_section_textarea}>

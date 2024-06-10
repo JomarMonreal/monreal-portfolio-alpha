@@ -1,14 +1,32 @@
 .contact_me_section_profile{
-    width: 100px; 
-    height: 100px; 
+    width: 90%;
+    height: 90%;
     border-radius: 50%;
 }
 
 .contact_me_section_textarea{
     flex: 1;
     margin-left: 1rem;
-    border-radius: 1rem;
     padding: 1rem;
     font-family: 'Merienda', cursive;
-    outline-color: var(--green-color);
+    outline: none;
+    border: 0;
+    border-bottom: solid 1px;
+    resize: none;
+    border-radius: 1rem 1rem 0 0;
+    background-color: #FFFFFF88;
+}
+
+.contact_me_section_textarea:focus{
+    border-bottom: solid 4px var(--green-color);
+}
+
+.contact_me_section_profile_background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px; 
+    background-color: var(--green-color);
 }
