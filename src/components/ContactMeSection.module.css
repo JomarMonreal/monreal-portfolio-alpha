@@ -1,0 +1,14 @@
+.contact_me_section_profile{
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+}
+
+.contact_me_section_textarea{
+    flex: 1;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: 'Merienda', cursive;
+    outline-color: var(--green-color);
+}
