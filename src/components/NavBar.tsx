@@ -18,27 +18,6 @@ const NavBar: FC<{ navBarItems: NavBarItem[] }> = ({navBarItems}) => {
 
   return (
     <>
-    <div className={`${styles.nav_bar} ${styles.nav_bar_hidden}`}>
-    {
-        navBarItems.map((navBarItem,index) =>{
-            return(
-                <li 
-                key={index}
-                id={"nav_bar-button-" + index}
-                className={`${styles.nav_bar_button}`}
-                onClick={(e) => {
-                    setselectedIndex(index)
-                }}
-                
-                >
-                <div id={"nav_bar-selected-" + index} className={selectedIndex === index? `${styles.nav_bar_selected}`: `${styles.nav_bar_selected} ${styles.no_display}`} title={navBarItem.label}></div>
-                {navBarItem.icon}
-                </li>
-            )
-        })
-        }
-    </div>
-
     <div className={`${styles.nav_bar}`}>
         <ul className={`${styles.nav_bar_buttons}`}>
             {
@@ -63,8 +42,8 @@ const NavBar: FC<{ navBarItems: NavBarItem[] }> = ({navBarItems}) => {
             }
         </ul>
         <div className={`${styles.nav_bar_label}`}>
-        <div className={`${styles.nav_bar_title}`}>JM</div>
-        <div>@2024</div>
+            <div className={`${styles.nav_bar_title}`}>JM</div>
+            <div>@2024</div>
         </div>
     </div>
     </>
