@@ -1,5 +1,28 @@
 /*for popup css*/
 
+@keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes zoomOut {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      display: none;
+    }
+  }
+
 .whole_screen{
     position: fixed;
     display: flex;
@@ -20,6 +43,11 @@
     scrollbar-width: none;
     display: flex;
     justify-content: space-around;
+    animation: zoomIn 0.5s ease-out;
+}
+
+.zoom_out{
+    animation: zoomOut 0.5s ease-out;
 }
 
 .popup h2{
