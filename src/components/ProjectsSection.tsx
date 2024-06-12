@@ -6,6 +6,7 @@ import projectsJSON from "../../public/json/projects.json"
 import { useState } from "react";
 import Popup from "./Popup";
 import { ProjectDetailScreen } from "../popup_screens/ProjectDetailScreen";
+import FloatingTitle from "./FloatingTitle";
 
 export function ProjectsSection() {
   const [projects, setProjects] = useState<Project[]>(convertToProjectsArray(projectsJSON))
@@ -13,9 +14,10 @@ export function ProjectsSection() {
   const [currrentProject, setCurrrentProject] = useState<Project>(projects[0]);
 
   return (
-    <div>
-      <h2 style={{marginBottom: "1rem"}}>Projects</h2>
+    <div  id="project_section">
+      <FloatingTitle text="Projects" tag="h2" className="text-6xl" />
       <p>Explore a selection of my featured works and innovations, showcasing a diverse range of projects and creative solutions.</p>
+
       {projects.map((project, index) => (
         <ProjectsSectionCard
           key={index}
@@ -27,6 +29,7 @@ export function ProjectsSection() {
           onViewClick={()=>{setIsPopupVisible(true); setCurrrentProject(project)}}
         />
       ))}
+
       {isPopupVisible? <Popup onOutsideClick={()=>{setIsPopupVisible(false)}} borderRadius={"2rem"} width={"50vw"} height={"80vh"}>
         <ProjectDetailScreen type={currrentProject.type} title={currrentProject.title} description={currrentProject.description} imageUrl={currrentProject.imageUrl} projectUrl={currrentProject.projectUrl}/>
       </Popup>: null}

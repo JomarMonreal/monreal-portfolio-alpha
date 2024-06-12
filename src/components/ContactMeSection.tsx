@@ -6,6 +6,8 @@ import { BiLogoGmail } from "react-icons/bi";
 import { iconSize } from "@/constants/iconConstants";
 import styles from "./ContactMeSection.module.css";
 import { useRef } from "react";
+import FloatingTitle from "./FloatingTitle";
+import Image from "next/image";
 
 const icons = [
   { component: FaLinkedin, key: "linkedin" , url: "https://www.linkedin.com/in/jpmonreal/"},
@@ -21,17 +23,24 @@ export function ContactMeSection() {
 
   return (
     <form>
-      <h2 id="contact_section" style={{ marginBottom: "1rem" }}>Contact Me</h2>
+      <div id="contact_section"></div>
+      <FloatingTitle text="Contact Me" tag="h2" className="text-6xl" />
+
       <p>
         I&#39;m open to new opportunities and always excited to connect for projects, collaborations, or simply a friendly chat. Don&#39;t hesitate to get in touch!
       </p>
 
-      <h4 style={{marginTop: "1rem"}}>Message:</h4>
-      <div className="flexed padded">
+      <FloatingTitle text="Message" tag="h4" className="text-3xl" />
+
+
+      <div className="flex">
         <div className={styles.contact_me_section_profile_background}>
-          <img
+          <Image
             src="/images/profilePhoto.jfif"
-            className={styles.contact_me_section_profile}
+            width={200}
+            height={200} 
+            alt={"profile"}
+            className="rounded-full"
           />
         </div>
         <textarea ref={textarea}
@@ -39,15 +48,12 @@ export function ContactMeSection() {
           className={styles.contact_me_section_input}
         ></textarea>
       </div>
+
+
       <div
-        className="flexed"
-        style={{
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "1ch 0",
-        }}
+        className="flex justify-between items-center"
       >
-        <div className="flexed">
+        <div className="flex my-3">
           {icons.map((icon) => {
             const IconComponent = icon.component;
             return (

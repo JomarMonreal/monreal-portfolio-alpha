@@ -1,6 +1,7 @@
 import { FC } from "react";
-import styles from "./ProjectsSectionCard.module.css";
 import { ProjectType } from "../types/types";
+import Image from "next/image";
+import FloatingTitle from "./FloatingTitle";
 
 interface ProjectSectionCardProps{
   type: ProjectType,
@@ -12,12 +13,19 @@ interface ProjectSectionCardProps{
 }
 
 export const ProjectsSectionCard:FC<ProjectSectionCardProps> = (props) => {
-  return <div className={styles.projects_section_card} style={{ alignItems: "center" }}>
-    <img className={styles.projects_section_image} src={props.imagePath} />
-    <div className="padded flexed" style={{ flexDirection: "column", justifyContent:"center", width: "50%", padding: "1.5rem" }}>
-      <h3 style={{ margin: 0 }}>{props.title}</h3>
-      <p className={styles.projects_section_description}>{props.description}</p>
-      <button style={{ width: "auto" }} onClick={props.onViewClick}>View more details</button>
+  return <div className="flex my-4 items-center flex-wrap" >
+    <Image 
+      src={props.imagePath} 
+      width={300} 
+      height={300} 
+      alt={props.type}
+      onClick={props.onViewClick}
+      className="hover:scale-105 cursor-pointer mr-4"
+    />
+    <div className="flex-1">
+      <FloatingTitle text={props.title} tag={"h3"} className={"text-4xl"}/>
+      <p className="mb-3">{props.description}</p>
+      <button onClick={props.onViewClick}>View more details</button>
     </div>
   </div>;
 }

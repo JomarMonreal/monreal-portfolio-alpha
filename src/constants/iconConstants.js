@@ -1,3 +1,5 @@
 export const iconSize = "4ch"
+export const navIconSize = "2.5rem"
+export const skillsIconSize = "2.5rem"
 export const iconColor = "white"
 export const headerIconColor = "black"

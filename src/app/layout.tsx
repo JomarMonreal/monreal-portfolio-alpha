@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
-import {iconSize, iconColor} from "../constants/iconConstants.js"
+import {iconSize, iconColor, navIconSize} from "../constants/iconConstants.js"
 
 import { FaHome, FaInfo } from 'react-icons/fa'; 
 import { AiFillProject } from "react-icons/ai";
@@ -12,9 +12,9 @@ import { Bamboos } from "@/components/Bamboos";
 
 
 const navBarItems = [
-  { path: '/', label: 'Home', icon: <FaHome size={iconSize} color={iconColor} cursor={"pointer"}/> },
-  { path: '#project_section', label: 'Projects', icon: <AiFillProject size={iconSize} color={iconColor} cursor={"pointer"}/> },
-  { path: '#contact_section', label: 'Contact Me', icon: <IoIosContact size={iconSize} color={iconColor} cursor={"pointer"}/> },
+  { path: '/', label: 'Home', icon: <FaHome size={navIconSize} cursor={"pointer"}/> },
+  { path: '#project_section', label: 'Projects', icon: <AiFillProject size={navIconSize} cursor={"pointer"}/> },
+  { path: '#contact_section', label: 'Contact Me', icon: <IoIosContact size={navIconSize} cursor={"pointer"}/> },
 ];
 
 
@@ -39,9 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body>
         <Bamboos/>
-        <div className={`flexed`} style={{width: "100%"}}>
+        <div className="flex sm:flex-row flex-col-reverse justify-between" >
           {children}
           <NavBar navBarItems={navBarItems}/>
         </div>

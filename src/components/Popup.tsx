@@ -12,7 +12,7 @@ interface PopupProps {
 }
 
 const Popup: FC<PopupProps> = (props) => {
-  const [popupWidth, setPopupWidth] = useState<string>('');
+  const [popupWidth, setPopupWidth] = useState<string>('80%');
 
   useEffect(() => {
     const handleResize = () => {

@@ -4,7 +4,7 @@
     top: -100svh;
     height: 300%;
     width: 150vw;
-    z-index: 100;
+    z-index: 45;
     filter: contrast(200%);
     filter: brightness(70%);
 
@@ -17,12 +17,12 @@
 
 .bamboos2{
     position: fixed;
-    left: -85vw;
+    left: -88vw;
     top: -50svh;
     height: 250%;
     width: 100vw;
     transform: scaleX(-1);
-    z-index: -100;
+    z-index: -45;
     filter: saturate(70%);
 
     animation: sway 20s infinite linear;
@@ -32,6 +32,7 @@
 
 @media (max-width: 850px) {
     .bamboos{
+        top: -100svh;
         right: -120vw;
     }
 
@@ -40,10 +41,12 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
     .bamboos{
-        display: none;
-        right: -180vw;
+        top: -50ch;
+        right: -340vw;
+        height: 250%;
+        width: 1500px;
     }
 
     .bamboos2{

@@ -1,78 +1,41 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-:root{
-  --background-color: #fdf5c3;
-  --dark-green-color: #1A3B04;
-  --dark-green-color-hover: #071001;
-  --green-color: #415c2b;
+@font-face {
+  font-family: 'Moreganic';
+  font-weight: 400;
+  src: url('/fonts/Moreganic.ttf') format('truetype');
 }
 
-body{
-  background-color: var(--background-color);
-  color: var(--dark-green-color);
-  display: flex;
-  margin: 0;
-  font-size: small;
+@font-face {
+  font-family: 'Moreganic';
+  font-weight: 500;
+  src: url('/fonts/Moreganic.ttf') format('truetype');
 }
 
-h1, h2, h3,h4{
-  font-family: "Inter", sans-serif;
-  font-weight: 800;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  body {
+    @apply font-serif text-lime-800 from-lime-200 bg-gradient-to-t;
+  }
+  h1,h2,h3,h4,h5,h6{
+    @apply font-serif cursor-default my-3;
+  }
+  button{
+    @apply bg-lime-900 text-white rounded-l-full rounded-r-full p-2 px-4 hover:bg-lime-600 hover:scale-105;
+  }
 }
 
-h2{
-  font-size: 50px;
-}
+@layer components{
+  .tag{
+    @apply bg-lime-800 text-white py-1 px-3 rounded-l-full rounded-r-full mx-1 cursor-pointer flex justify-center transition-all duration-300 ease-in select-none;
+  }
 
-h3{
-  font-size: 25px;
-}
-
-h4{
-  font-size: 18px;
-  margin: 0;
-  margin-left: 1rem;
-}
-
-ul{
-  padding-left: 0;
-}
-
-li{
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  padding: 1ch;
-}
-
-button{
-  background-color: var(--green-color);
-  color: white;
-  width: auto;
-  border-radius: 1rem;
-  cursor: pointer;
-  border: 0;
-  padding: 1.5ch;
-}
-
-button:hover{
-  background-color: var(--dark-green-color);
-}
-
-.flexed{
-  display: flex;
-}
-
-.padded{
-  padding: 1rem;
-}
-
-.filled{
-  width: 100%;
-}
-
-.icon_button:hover{
-  scale: 1.1;
+  .nav-bar{
+    @apply fixed z-50 bg-lime-900 text-white flex items-center justify-between sm:pb-4 
+      sm:top-0 sm:right-0 sm:left-auto sm:flex-col sm:h-full sm:w-20 sm:pr-0
+      top-0 left-0 flex-row h-20 w-full pr-4
+    ;
+  }
 }
