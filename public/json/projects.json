@@ -17,21 +17,21 @@
       "imageUrl": "https://lh3.googleusercontent.com/drive-viewer/AKGpihZpk_fwHp0qXCQyozblsb5ccuYwWgZqP6HGGi-Y-SKQryQdevyDtKVCvUNL5uSJsINzY-HfDBZT8R67H89cRYnLRh5c4-efAKs=s1600-rw-v1"
     },
     {
-      "type": "game",
-      "imagePath": "/images/game.png",
-      "title": "Tamaan Mo Ko Beybe",
-      "description": "Tamaan Mo Ko Beybe a two-player game consisting of a throwing team and a dodger. The goal of the throwing team is to hit the dodger with the ball before the time runs out. The goal of the dodger is to dodge the ball until the time runs out.",
-      "projectUrl": "https://github.com/JomarMonreal/Tamaan-Mo-Ko-Beybe-Java-",
-      "imageUrl": "https://lh3.googleusercontent.com/drive-viewer/AKGpihb3x7FQ7tIn1W1jB3GAy5T2l-cKCXv8iA9HYNdKz5_RAMdnK77BBY4OM-EMB6AYd5mCpqyPKbe2QR7Np_uOz21LaJwNWpzNuuU=s1600-rw-v1"
-
-    },
-    {
       "type": "mobile",
       "imagePath": "/images/mobile2.png",
       "title": "Elbi GenerosiTree",
       "description": "Elbi GenerosiTree is a mobile application developed using Flutter, designed to manage donations coming into the university. This project is a Flutter-based application aimed at streamlining the process of managing donations. It utilizes various packages and dependencies to offer a comprehensive and user-friendly experience.",
-      "projectUrl": "https://github.com/ICS-CMSC-23/Elbi-Donation-System/",
+      "projectUrl": "https://ufile.io/rhac1nqw",
       "imageUrl": "https://lh3.googleusercontent.com/drive-viewer/AKGpiha84apxImw37smYdwFsA0A6UT2oMSo2SaC0gmzFOwbePgxe-lOB7W_NcmiuK1oV0UqYZSrA6VQjRtozTeS5d_HpyOC5o2VjCcI=s1600-rw-v1"
+
+    },
+    {
+      "type": "game",
+      "imagePath": "/images/game.png",
+      "title": "Tamaan Mo Ko Beybe",
+      "description": "Tamaan Mo Ko Beybe a two-player game consisting of a throwing team and a dodger. The goal of the throwing team is to hit the dodger with the ball before the time runs out. The goal of the dodger is to dodge the ball until the time runs out.",
+      "projectUrl": "https://ufile.io/82kqe4mi",
+      "imageUrl": "https://lh3.googleusercontent.com/drive-viewer/AKGpihb3x7FQ7tIn1W1jB3GAy5T2l-cKCXv8iA9HYNdKz5_RAMdnK77BBY4OM-EMB6AYd5mCpqyPKbe2QR7Np_uOz21LaJwNWpzNuuU=s1600-rw-v1"
 
     }
   ]
