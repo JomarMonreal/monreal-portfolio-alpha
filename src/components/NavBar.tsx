@@ -67,6 +67,9 @@ const NavBar: FC<{ navBarItems: NavBarItem[] }> = ({navBarItems}) => {
                             
                             >
                                 <div title={navBarItem.label} className="flex sm:flex-row flex-col justify-between items-center my-4 group">
+                                    <div className="absolute right-24 w-0 h-10 group-hover:w-24 bg-lime-900 flex justify-center items-center p-0 group-hover:p-3 transition-all overflow-hidden whitespace-nowrap text-nowrap">
+                                        {navBarItem.label}
+                                    </div>
                                     <div className="hover:scale-110">
                                         {navBarItem.icon}
                                     </div>

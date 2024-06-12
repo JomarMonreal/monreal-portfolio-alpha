@@ -33,7 +33,7 @@
 @media (max-width: 850px) {
     .bamboos{
         top: -100svh;
-        right: -120vw;
+        right: -125vw;
     }
 
     .bamboos2{
@@ -47,6 +47,20 @@
         right: -340vw;
         height: 250%;
         width: 1500px;
+    }
+
+    .bamboos2{
+        left: 100vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .bamboos{
+        top: -50ch;
+        right: -400vw;
+        height: 250%;
+        width: 1500px;
+        display: none;
     }
 
     .bamboos2{

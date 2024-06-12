@@ -3,6 +3,8 @@
 import { ProjectType } from "@/types/types";
 import styles from "./ProjectDetailScreen.module.css"
 import { FC } from "react";
+import { GoXCircle } from "react-icons/go";
+import { iconSize, navIconSize } from "@/constants/iconConstants";
 
 interface ProjectDetailScreenProps{
   type: ProjectType,
@@ -14,7 +16,6 @@ interface ProjectDetailScreenProps{
 
 export const ProjectDetailScreen: FC<ProjectDetailScreenProps> = (props) => {
   return <div className={`${styles.project_detail_screen}`}> 
-    <div style={{height: "1rem", visibility: "hidden"}}>...</div>
     <img className={styles.project_detail_screen_image} src={props.imageUrl} />
     <div className={`${styles.project_detail_screen_details}`}>
       <h1 className="text-3xl">{props.title}</h1>

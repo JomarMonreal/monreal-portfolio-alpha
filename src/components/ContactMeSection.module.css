@@ -18,11 +18,11 @@
 }
 
 .contact_me_section_input::placeholder{
-    color: var(--green-color);
+    color: rgb(70, 112, 10);
 }
 
 .contact_me_section_input:focus{
-    border-bottom: solid 4px var(--green-color);
+    border-bottom: solid 4px rgb(70, 112, 10);
 }
 
 .contact_me_section_profile_background{
