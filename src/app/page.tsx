@@ -16,33 +16,61 @@ import skillsJSON from "../../public/json/skills.json"
 export default function Home() {
   const [projects, setProjects] = useState<Project[]>(convertToProjectsArray(projectsJSON))
   const [skills, setSkills] = useState(skillsJSON)
-
+  const [token, setToken] = useState("")
 
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/projects/`)
-    .then(
-      response => {
-        console.log(response.data)
-        setProjects(response.data)
 
-        axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/skills/`)
-        .then(
-          response => {
-            console.log(response.data)
-            setSkills(response.data)
-            setIsLoading(false)
-          }
-        ).catch(
-          err => console.log(err)
-        )
+    // get token first
+    axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/token/`,
+      {
+        "username": process.env.NEXT_PUBLIC_USERNAME,
+        "password": process.env.NEXT_PUBLIC_PASSWORD
       }
-    ).catch(
-      err => console.log(err)
-    )
+    ).then(response =>{
+      setToken(response.data.access)
+      console.log(response.data.access)
+    })
+    .catch(err=>console.log(err))
+
     
   }, []);
+
+  useEffect(() => {
+    if(token != "" || token){
+      //then get projects
+      axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/projects/`,
+        {
+          headers: { Authorization: `Bearer ${token}` }
+        }
+      )
+      .then(
+        response => {
+          console.log(response.data)
+          setProjects(response.data)
+  
+          //then get skills
+          axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/skills/`,
+            {
+              headers: { Authorization: `Bearer ${token}` }
+            }
+          )
+          .then(
+            response => {
+              console.log(response.data)
+              setSkills(response.data)
+              setIsLoading(false)
+            }
+          ).catch(
+            err => console.log(err)
+          )
+        }
+      ).catch(
+        err => console.log(err)
+      )
+    }
+  }, [token]);
 
   if (isLoading) {
     return <Loading />;
