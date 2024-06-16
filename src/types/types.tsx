@@ -6,6 +6,8 @@ export type Project = {
     description: string,
     projectUrl: string,
     imageUrl: string,
+    skills: string[],
+    role: string
   }
 
 const convertToProject = (data: any): Project | null => {
@@ -17,7 +19,9 @@ const convertToProject = (data: any): Project | null => {
             title: data.title,
             description: data.description,
             projectUrl: data.projectUrl,
-            imageUrl: data.imageUrl
+            imageUrl: data.imageUrl,
+            skills: data.skills,
+            role: data.role
         };
     }
     return null;
@@ -26,3 +30,11 @@ const convertToProject = (data: any): Project | null => {
 export const convertToProjectsArray = (jsonArray: any[]): Project[] => {
     return jsonArray.map(item => convertToProject(item)).filter(item => item !== null) as Project[];
 };
+
+
+export type Skill = {
+    icon: string;
+    name: string;
+    classification: string;
+    description: string;
+}

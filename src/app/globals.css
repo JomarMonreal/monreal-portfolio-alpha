@@ -16,6 +16,9 @@
 
 
 @layer base{
+  html{
+    @apply scrollbar scrollbar-track-lime-100 scrollbar-thumb-lime-700
+  }
   body {
     @apply font-serif text-lime-800 from-lime-200 bg-gradient-to-t;
   }
@@ -37,5 +40,13 @@
       sm:top-0 sm:right-0 sm:left-auto sm:flex-col sm:h-full sm:w-20 sm:pr-0
       top-0 left-0 flex-row h-20 w-full pr-4
     ;
+  }
+
+  .icon_button{
+    @apply hover:text-lime-600
+  }
+  
+  .skills{
+    @apply pt-5 flex w-full overflow-x-auto scrollbar scrollbar-track-lime-100 scrollbar-thumb-lime-700
   }
 }

@@ -1,8 +1,8 @@
 import FloatingTitle from "./FloatingTitle";
 
 export function HomeCover() {
-  return <div>
-    <div>
+  return <section>
+    <header>
       <div className="flex flex-wrap">
         <FloatingTitle text="Jomar " tag="h1" className="text-8xl"/>
         <FloatingTitle text="Monreal" tag="h1" className="text-8xl"/>
@@ -12,14 +12,14 @@ export function HomeCover() {
         <div className="tag hover:bg-lime-600">Responsive</div> 
         <div className="tag w-24 hover:w-40">Flexible</div> 
       </div>
-    </div>
+    </header>
 
-    <div className="py-3">
+    <p className="py-3">
       <strong>Hey there!</strong> I&#39;m Jomar P. Monreal, a Filipino enthusiastic 21st century literate with high adaptability and appreciation. As a versatile developer, I bring extensive experience in a wide range of programming languages and technologies.
-    </div>
+    </p>
 
 
-  </div>;
+  </section>;
 }
 
 

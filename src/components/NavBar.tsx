@@ -52,7 +52,7 @@ const NavBar: FC<{ navBarItems: NavBarItem[] }> = ({navBarItems}) => {
             </div>
         </div>
 
-        <div className="nav-bar">
+        <nav className="nav-bar">
             <ul className="w-full pl-4 flex sm:flex-col flex-row">
                 {
                 navBarItems.map((navBarItem,index) =>{
@@ -88,7 +88,7 @@ const NavBar: FC<{ navBarItems: NavBarItem[] }> = ({navBarItems}) => {
                 <div className="text-4xl select-none">JM</div>
                 <div>@2024</div>
             </div>
-        </div>
+        </nav>
     </>
   )
 }

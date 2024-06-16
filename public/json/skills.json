@@ -1,0 +1,106 @@
+[
+    {
+      "icon": "FaReact",
+      "name": "React",
+      "classification": "Frontend Development",
+      "description": "A JavaScript library for building user interfaces, maintained by Facebook and a community of individual developers and companies."
+    },
+    {
+        "icon": "SiNextdotjs",
+        "name": "Next.js",
+        "classification": "Frontend Development",
+        "description": "A React framework for server-rendered or statically-exported React applications."
+    },
+    {
+        "icon": "SiTailwindcss",
+        "name": "Tailwind",
+        "classification": "Frontend Development",
+        "description": "A utility-first CSS framework for creating custom designs without writing any CSS."
+    },
+    {
+        "icon": "SiFlutter",
+        "name": "Flutter",
+        "classification": "Frontend Development",
+        "description": "A UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase, developed by Google."
+    },
+    {
+        "icon": "FaNodeJs",
+        "name": "Express JS",
+        "classification": "Backend Development",
+        "description": "A fast, unopinionated, minimalist web framework for Node.js, used for building web and mobile applications."
+    },
+    {
+        "icon": "SiMongodb",
+        "name": "Mongo DB",
+        "classification": "Database Management",
+        "description": "A document-oriented NoSQL database used for high volume data storage."
+    },
+    {
+        "icon": "SiFirebase",
+        "name": "Firebase",
+        "classification": "Database Management",
+        "description": "A platform developed by Google for creating mobile and web applications, which includes a real-time NoSQL database."
+    },
+
+    
+    {
+      "icon": "FaJava",
+      "name": "Java",
+      "classification": "Languages",
+      "description": "A high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible."
+    },
+    {
+        "icon": "FaJs",
+        "name": "Javascript",
+        "classification": "Languages",
+        "description": "A versatile, high-level programming language that conforms to the ECMAScript specification and is used for web development."
+    },
+    {
+      "icon": "FaPython",
+      "name": "Python",
+      "classification": "Languages",
+      "description": "A high-level, interpreted programming language with dynamic semantics, known for its readability and ease of use."
+    },
+    {
+        "icon": "SiDart",
+        "name": "Dart",
+        "classification": "Languages",
+        "description": "A client-optimized language for fast apps on any platform, developed by Google and used to build mobile, desktop, server, and web applications."
+    },
+    {
+        "icon": "SiCsharp",
+        "name": "C#",
+        "classification": "Languages",
+        "description": "A modern, object-oriented programming language developed by Microsoft as part of its .NET initiative."
+    },
+    {
+        "icon": "SiCplusplus",
+        "name": "C++",
+        "classification": "Languages",
+        "description": "A general-purpose programming language created as an extension of the C programming language, or 'C with Classes'."
+    },
+    {
+        "icon": "SiC",
+        "name": "C",
+        "classification": "Languages",
+        "description": "A general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion."
+    },
+    {
+        "icon": "FaHtml5",
+        "name": "HTML 5",
+        "classification": "Web Development",
+        "description": "The latest version of Hypertext Markup Language, the code that describes web pages."
+    },
+    {
+        "icon": "FaCss3Alt",
+        "name": "CSS 3",
+        "classification": "Web Development",
+        "description": "The latest evolution of the Cascading Style Sheets language, bringing new features like rounded corners, shadows, gradients, and animations."
+    },
+    {
+        "icon": "FaJs",
+        "name": "Javascript ES6+",
+        "classification": "Web Development",
+        "description": "The sixth edition of the ECMAScript standard, bringing new features and syntax improvements to the JavaScript language."
+    }
+]

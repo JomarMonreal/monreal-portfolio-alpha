@@ -41,10 +41,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Bamboos/>
-        <div className="flex sm:flex-row flex-col-reverse justify-between" >
+        <main className="flex sm:flex-row flex-col-reverse justify-between" >
           {children}
           <NavBar navBarItems={navBarItems}/>
-        </div>
+        </main>
       </body>
     </html>
   );

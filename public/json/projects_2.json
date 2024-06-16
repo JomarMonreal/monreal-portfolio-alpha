@@ -1,0 +1,43 @@
+[
+    {
+      "type": "website",
+      "imagePath": "/images/website2.png",
+      "title": "IChooSe",
+      "description": "IChooSe is an online room reservation system for the Institute of Computer Science at the University of the Philippines Los Baños. It simplifies the process of reserving rooms within the institute.",
+      "skills": ["Web Development", "MongoDB", "Express", "React", "Node.js", "Chatbot"],
+      "role": "Frontend Developer",
+      "projectUrl": "https://alpha-ichoose.vercel.app/",
+      "imageUrl": "https://lh3.googleusercontent.com/drive-viewer/AKGpihZsXabkNphqfde_je8KJ7DYL2ykUJL0URNQSGpWjmGs7jn9zH6qaFX-uhzMNpopLi949pJUQfkDNq5uny5CJmGKzdG6aa2l2g=s1600-rw-v1"
+    },
+    {
+      "type": "website",
+      "imagePath": "/images/website2.png",
+      "title": "Farm-to-Table",
+      "description": "Farm-to-Table is an online platform connecting farmers directly with consumers to provide fresh produce. In this project, our team parodied our products with the theme of Plant Vs Zombies.",
+      "skills": ["Web Development", "MongoDB", "Express", "React", "Node.js", "Chatbot"],
+      "role": "Project Manager | Full Stack Developer",
+      "projectUrl": "https://farm-to-table.vercel.app/",
+      "imageUrl": "https://lh3.googleusercontent.com/drive-viewer/AKGpihZpk_fwHp0qXCQyozblsb5ccuYwWgZqP6HGGi-Y-SKQryQdevyDtKVCvUNL5uSJsINzY-HfDBZT8R67H89cRYnLRh5c4-efAKs=s1600-rw-v1"
+    },
+    {
+      "type": "mobile",
+      "imagePath": "/images/mobile2.png",
+      "title": "Elbi GenerosiTree",
+      "description": "Elbi GenerosiTree is a mobile application developed using Flutter, designed to manage donations coming into the university. This project is a Flutter-based application aimed at streamlining the process of managing donations. It utilizes various packages and dependencies to offer a comprehensive and user-friendly experience.",
+      "skills": ["Android Development", "Flutter", "Dart", "Firebase"],
+      "role": "Project Manager | Android Developer",
+      "projectUrl": "https://ufile.io/rhac1nqw",
+      "imageUrl": "https://lh3.googleusercontent.com/drive-viewer/AKGpiha84apxImw37smYdwFsA0A6UT2oMSo2SaC0gmzFOwbePgxe-lOB7W_NcmiuK1oV0UqYZSrA6VQjRtozTeS5d_HpyOC5o2VjCcI=s1600-rw-v1"
+    },
+    {
+      "type": "game",
+      "imagePath": "/images/game.png",
+      "title": "Tamaan Mo Ko Beybe",
+      "description": "Tamaan Mo Ko Beybe is a two-player game consisting of a throwing team and a dodger. The goal of the throwing team is to hit the dodger with the ball before the time runs out. The goal of the dodger is to dodge the ball until the time runs out.",
+      "skills": ["Game Development", "Java", "JavaFX", "Eclipse", "Offline Multiplayer"],
+      "role": "Project Manager | Java Developer",
+      "projectUrl": "https://ufile.io/82kqe4mi",
+      "imageUrl": "https://lh3.googleusercontent.com/drive-viewer/AKGpihb3x7FQ7tIn1W1jB3GAy5T2l-cKCXv8iA9HYNdKz5_RAMdnK77BBY4OM-EMB6AYd5mCpqyPKbe2QR7Np_uOz21LaJwNWpzNuuU=s1600-rw-v1"
+    }
+  ]
+  
