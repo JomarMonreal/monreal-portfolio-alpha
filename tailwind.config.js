@@ -9,9 +9,9 @@ module.exports = {
       },
       keyframes: {
         float:{
-          "0%": { transform: "translateY(0rem)"},
-          "50%": { transform: "translateY(-0.5rem)"},
-          "100%": { transform: "translateY(0rem)"},
+          "0%": { translate: "0 0"},
+          "50%": { translate: "0 -0.5rem"},
+          "100%": { translate: "0 0"},
         }
       },
       animation: {

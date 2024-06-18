@@ -23,7 +23,7 @@ export const ProjectDetailScreen: FC<ProjectDetailScreenProps> = (props) => {
       <div className="flex my-4 w-full overflow-x-auto scrollbar-thin scrollbar-track-lime-100 scrollbar-thumb-lime-700">
         {props.skills.map((skill, index)=>{
           return (
-            <div key={index} className="tag flex-nowrap whitespace-nowrap w-auto">{skill}</div>
+            <div key={index} className="tag flex-nowrap whitespace-nowrap w-auto hover:bg-lime-600">{skill}</div>
           )
         })}
       </div>

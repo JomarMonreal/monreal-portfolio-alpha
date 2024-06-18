@@ -33,7 +33,7 @@ export const SkillsSection: FC<SkillsSectionProps> = (props) => {
               <ul className="skills">
                 {classifiedSkills.map((skill, index) => (
                   <li key={index} className="flex flex-col items-center min-w-20 relative ">
-                    <div className="animate-float">
+                    <div className="animate-float hover:scale-110">
                       {DynamicIcon(skill.icon)}
                     </div>
                     <div className="p-4 text-center">
