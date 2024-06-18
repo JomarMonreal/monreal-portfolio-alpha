@@ -21,7 +21,10 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-
+    if(sessionStorage.getItem("token")){
+      setToken(sessionStorage.getItem("token")!)
+      return
+    }
     // get token first
     axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/token/`,
       {
@@ -30,6 +33,7 @@ export default function Home() {
       }
     ).then(response =>{
       setToken(response.data.access)
+      sessionStorage.setItem("token",response.data.access)
       console.log(response.data.access)
     })
     .catch(err=>console.log(err))
